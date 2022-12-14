@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,200&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;margin: 0;
+    transition: ease-in-out .4s;
+}
+:root{
+    --main-color: rgb(39, 84, 126);
+}
+body{
+    scroll-behavior: smooth;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.section-p{
+    padding: 50px 50px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+/* header */
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/background.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main-color);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+.icon i{
+    font-size: 20px;
+    border:1px solid rgb(204, 207, 11);
+    color: #fff;
+    margin-left: 40px;
+    padding: 3px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+.link{
+    display: flex;
+    align-items: center;
+}
+.link a{
+    margin: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.link a:hover{
+    color: rgba(212, 212, 212, 0.596);
+}
+.logo-img{
+    width: 200px;
+    height: 110px;
+    border-radius: 1px;
+    cursor: pointer;
+}
+.toggle-btn i{
+    font-size: 40px;
+    color: #fff;
+    margin-left: 40px;
+    padding: 6px 10px;
+    border-radius: 4px;
+    display: none;
+}
+.contact p{
+    margin-right: 40px;
+    border:1px solid rgb(204, 207, 11);
+    padding: 4px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+}
+/* hero section */
+.hero{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(39, 84, 126, 0.479);
+    color: white;
+    font-weight: bold;
+    padding-top: 250px;
+    padding-left: 50px;
+    padding-right: 20px;
+}
+.hero h1{
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+.hero h4{
+    font-size: 25px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+.hero p{
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 20px;
+}
+.hero a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 4px 20px;
+    border: 1px solid rgb(204, 207, 11);
+    color: white;
+    font-weight: normal;
+    margin-top: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+/* portfolio section */
+.portfolio{
+    width: 100%;
+    background-color: rgba(33, 83, 175, 0.336);
+}
+.portfolio-header h1{
+    color: rgb(99, 99, 99);
+    text-align: center;
+    font-size: 30px;
+}
+.portfolio-baaner{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.banner-data{
+    width: 400px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+.banner-data h3{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    background: linear-gradient(#e6646402, #285d88ee);
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-weight: normal;
+    font-size: 23px;
+}
+.banner-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background-color: #285d889d;
+    height: 100%;
+    width: 100%;
+    z-index: 11;
+    color: white;
+    transform: translateY(300px);
+
+}
+.banner-data:hover .banner-text{
+    transform: translateY(0);
+}
+.banner-text h4{
+    margin: 30px 0;
+    font-size: 22px;
+    font-weight: normal;
+}
+.banner-text p{
+    margin: 15px 0;
+}
+.banner-text a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border:1px solid rgb(204, 207, 11);
+    padding: 4px 20px;
+    cursor: pointer;
+}
+/* story section */
+.story{
+    display: flex;
+    margin-top: 100px;
+}
+.story-text{
+    width: 50%;
+    padding: 30px;
+}
+.story-text h1{
+    font-size: 35px;
+    margin-bottom: 5px;
+    color: grey;
+}
+.border{
+    width: 250px;
+    height: 2px;
+    margin-bottom: 20px;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.story-text h3{
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+.story-text p{
+    letter-spacing: 1px;
+}
+.story-text a{
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(31, 30, 30);
+    border:1px solid rgb(204, 207, 11);
+    padding: 3px 20px;
+    cursor: pointer;
+}
+.story-img{
+    width: 50%;
+    position: relative;
+}
+.story-img h2{
+    position: absolute;
+    top: -8%;
+    font-size: 55px;
+    left: -4%;
+    color: grey;
+    z-index: -1;
+}
+/* contact */
+.contacts{
+    margin-top: 70px;
+}
+.contact-header h1{
+    font-size: 35px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+.contact-header h4{
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+.name{
+    width: 48%;
+    outline: none;
+    height: 5vh;
+    border: none;
+    background-color: rgb(230, 230, 230);
+    margin-bottom: 20px;
+    padding: 5px;
+}
+.subject{
+    width: 97%;
+    height: 5vh;
+    outline: none;
+    border: none;
+    background-color: rgb(230, 230, 230);
+    margin-bottom: 20px;
+    padding: 5px;
+}
+.massage{
+    width: 97%;
+    outline: none;
+    border: none;
+    background-color: rgb(230, 230, 230);
+    padding: 5px;
+}
+.contact-form a{
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(31, 30, 30);
+    border:1px solid rgb(204, 207, 11);
+    padding: 3px 100px;
+    cursor: pointer;
+}
+/* footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 30px;
+    background-color: var(--main-color);
+    flex-wrap: wrap;
+}
+.company-logo h1{
+    font-size: 35px;
+    text-align: center;
+    color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+footer i{
+    font-size: 35px;
+    margin: 10px;
+    color: white;
+}
+footer p{
+    color: white;
+}
+@media (max-width: 999px) {
+    .section-p{
+        padding: 50px 30px;
+    }
+    .logo-img{
+        width: 150px;
+        height: 80px;
+    }
+    .link a {
+        margin: 10px 10px;
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+    .contact p {
+        padding: 4px 10px;
+    }
+    .banner-data {
+        width: 300px;
+        height: 250px;
+        position: relative;
+        overflow: hidden;
+        margin: 10px;
+    }
+    .story-img h2 {
+        top: -4%;
+    }
+}
+@media (max-width: 699px) {
+    .nav{
+        padding: 10px 0;
+        bottom: 0;
+        right: 0;
+    }
+    .logo-img{
+        display: none;
+    }
+    .link {
+        display: none;
+        align-items: center;
+    }
+    .show-nav{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 80%;
+        left: 0;
+        background-color: var(--main-color);
+        width: 100%;
+        color: black;
+    }
+    .link a{
+        margin: 10px 10px;
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        font-weight: normal;
+    }
+    .toggle-btn i{
+        display: block;
+        font-size: 28px;
+    }
+    .icon i {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    .contact p {
+        margin-right: 20px;
+        padding: 2px 5px;
+        font-size: 15px;
+        font-weight: normal;
+    }
+    .hero{
+       width: 80%; 
+       padding-top: 100px;
+       padding-left: 20px;
+    }
+    .portfolio-baaner {
+        flex-wrap: wrap;
+    }
+    .banner-data {
+        width: 100%;
+        height: 300px;
+        position: relative;
+        overflow: hidden;
+        margin: 20px 0;
+    }
+    .story{
+        flex-wrap: wrap;
+    }
+    .story-text {
+        width: 100%;
+        order: 2;
+    }
+    .story-img {
+        width: 100%;
+        margin: 20px;
+        order: 1;
+    }
+    .name, .subject, .massage {
+        width: 100%;
+    }
+    .contact-form a {
+        padding: 3px 50px;
+    }
+    .story-img h2 {
+        position: absolute;
+        top: -15%;
+        font-size: 45px;
+        left: -2%;
+        color: grey;
+        z-index: -1;
+    }
+}
